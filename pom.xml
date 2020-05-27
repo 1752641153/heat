@@ -55,13 +55,52 @@
             <artifactId>lombok</artifactId>
             <version>1.16.6</version>
         </dependency>
-        
+
+
+        <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/ffmpeg -->
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>ffmpeg</artifactId>
+            <version>3.2.1-1.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacpp -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacpp</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/javacv -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+
+
+
+        <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/opencv -->
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>opencv</artifactId>
+            <version>3.2.0-1.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/opencv -->
+        <dependency>
+            <groupId>org.bytedeco.javacpp-presets</groupId>
+            <artifactId>opencv</artifactId>
+            <version>3.2.0-1.3</version>
+        </dependency>
+
 
         <!--消息推送websocket-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>
