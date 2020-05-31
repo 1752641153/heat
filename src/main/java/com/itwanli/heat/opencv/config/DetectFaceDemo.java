@@ -1,5 +1,6 @@
-package com.itwanli.heat.config;
+package com.itwanli.heat.opencv.config;
 
+import com.itwanli.heat.opencv.utils.NumbersUtils;
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
@@ -30,7 +31,20 @@ public class DetectFaceDemo {
         // Draw a bounding box around each face.
         for (Rect rect : faceDetections.toArray()) {
             Imgproc.rectangle(image, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0));
-
+            double average = 0 ;
+            int c = 0;
+            for (int x=0;x<3050;x=x+20){
+                for(int y = 0;y<1250;y=y+20) {
+                    double num = NumbersUtils.getTemperature();
+                    if (rect.x < x && x < (rect.x + rect.width) && rect.y < y && y < (rect.y + rect.height))
+                    {
+                        System.out.println("("+(rect.x*2+rect.width)/2+","+(rect.y*2+rect.height)/2+")--" + num);
+                        c++;
+                        average = average + num;
+                    }
+                }
+            }
+            System.out.println("平均温度："+ average/c);
         }
 
 //         Save the visualized detection.

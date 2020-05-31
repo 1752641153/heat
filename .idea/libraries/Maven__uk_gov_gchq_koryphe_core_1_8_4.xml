@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: uk.gov.gchq.koryphe:core:1.8.4">
+    <CLASSES>
+      <root url="jar://D:/my_maven_local_repository/uk/gov/gchq/koryphe/core/1.8.4/core-1.8.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/my_maven_local_repository/uk/gov/gchq/koryphe/core/1.8.4/core-1.8.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/my_maven_local_repository/uk/gov/gchq/koryphe/core/1.8.4/core-1.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

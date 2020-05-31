@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="338f56e3-9e9a-4e1b-97c2-40a61a7e0015" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/camera/JavavcCameraTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/heat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/config/DetectFaceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/config/DetectFaceDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/config/ImgDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/config/ImgDetection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/camera/JavavcCameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/opencv/camera/JavavcCameraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/config/DetectFaceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/opencv/config/DetectFaceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/config/ImgDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/opencv/config/ImgDetection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/config/text.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/utils/ImageRemarkUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/utils/NumbersUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/opencv/utils/NumbersUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/websocket/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itwanli/heat/websocket/WebSocketServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,43 +65,30 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\G-YY\IdeaProjects\springboot\heat\src" />
+      <recent name="D:\G-YY\IdeaProjects\springboot\heat" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itwanli.heat.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\G-YY\IdeaProjects\springboot\heat\src\main\resources" />
       <recent name="D:\G-YY\IdeaProjects\springboot\heat\src" />
       <recent name="D:\G-YY\IdeaProjects\springboot\heat\src\main\resources\lib" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.itwanli.heat.utils" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\G-YY\IdeaProjects\springboot\heat\src" />
-      <recent name="D:\G-YY\IdeaProjects\springboot\heat" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.ImageRemarkUtil">
-    <configuration name="ImageRemarkUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.utils.ImageRemarkUtil" />
-      <module name="heat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itwanli.heat.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ImgDetection">
     <configuration name="ImgDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.config.ImgDetection" />
+      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.opencv.config.ImgDetection" />
       <module name="heat" />
       <option name="VM_PARAMETERS" value="-Djava.library.path=D:\F：WL\A模块负责人专用\项目\防疫检测系统\Opencv3.4.2\Opencv3.4.2\Windows软件包\opencv\build\java\x64" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.itwanli.heat.config.*" />
+          <option name="PATTERN" value="com.itwanli.heat.opencv.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,38 +97,52 @@
       </method>
     </configuration>
     <configuration name="JavavcCameraTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.camera.JavavcCameraTest" />
-      <module name="heat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itwanli.heat.camera.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumbersUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.utils.NumbersUtils" />
-      <module name="heat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itwanli.heat.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="text" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.config.text" />
+      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.controller.config.camera.JavavcCameraTest" />
       <module name="heat" />
       <option name="VM_PARAMETERS" value="-Djava.library.path=D:\F：WL\A模块负责人专用\项目\防疫检测系统\Opencv3.4.2\Opencv3.4.2\Windows软件包\opencv\build\java\x64" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.itwanli.heat.config.*" />
+          <option name="PATTERN" value="com.itwanli.heat.controller.config.camera.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainExam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.opencv.config.MainExam" />
+      <module name="heat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itwanli.heat.opencv.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainExamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.opencv.MainExamTest" />
+      <module name="heat" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=D:\F：WL\A模块负责人专用\项目\防疫检测系统\Opencv3.4.2\Opencv3.4.2\Windows软件包\opencv\build\java\x64" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itwanli.heat.opencv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteImageType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itwanli.heat.opencv.utils.WriteImageType" />
+      <module name="heat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itwanli.heat.opencv.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,20 +158,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.text" />
       <item itemvalue="Application.ImgDetection" />
       <item itemvalue="Application.JavavcCameraTest" />
-      <item itemvalue="Application.NumbersUtils" />
+      <item itemvalue="Application.MainExam" />
+      <item itemvalue="Application.WriteImageType" />
+      <item itemvalue="Application.MainExamTest" />
       <item itemvalue="Spring Boot.HeatApplication" />
-      <item itemvalue="Application.ImageRemarkUtil" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ImageRemarkUtil" />
-        <item itemvalue="Application.NumbersUtils" />
         <item itemvalue="Application.ImgDetection" />
+        <item itemvalue="Application.MainExamTest" />
         <item itemvalue="Application.JavavcCameraTest" />
-        <item itemvalue="Application.text" />
+        <item itemvalue="Application.MainExam" />
+        <item itemvalue="Application.WriteImageType" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +203,18 @@
       <workItem from="1590566465905" duration="112000" />
       <workItem from="1590566587239" duration="6614000" />
       <workItem from="1590633097077" duration="3633000" />
-      <workItem from="1590710960535" duration="2321000" />
+      <workItem from="1590710960535" duration="7099000" />
+      <workItem from="1590718374958" duration="100000" />
+      <workItem from="1590718498801" duration="221000" />
+      <workItem from="1590718740896" duration="666000" />
+      <workItem from="1590719437548" duration="402000" />
+      <workItem from="1590719865478" duration="57000" />
+      <workItem from="1590719942941" duration="1757000" />
+      <workItem from="1590728877340" duration="3545000" />
+      <workItem from="1590826549979" duration="656000" />
+      <workItem from="1590839842324" duration="1019000" />
+      <workItem from="1590887551464" duration="8537000" />
+      <workItem from="1590902801659" duration="12224000" />
     </task>
     <task id="LOCAL-00001" summary="摄像头拍照">
       <created>1590561779363</created>
@@ -220,15 +234,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="摄像头拍照" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="236" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590487842247">
+    <state x="198" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590910750372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590481894283" />
+    <state x="236" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590728838370" />
+    <state x="198" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590910750372" />
     <state x="236" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1590487842247" />
     <state x="548" y="118" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1590481886685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="118" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590481886685" />
+    <state x="385" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590908243111">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="385" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590908243111" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590489853569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -241,54 +260,59 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590582807776" />
-    <state width="1493" height="119" key="GridCell.Tab.0.bottom" timestamp="1590712966558">
+    <state width="1493" height="112" key="GridCell.Tab.0.bottom" timestamp="1590916000190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="119" key="GridCell.Tab.0.bottom/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590712966558" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590483032383" />
-    <state width="1493" height="119" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590665880941" />
-    <state width="1493" height="119" key="GridCell.Tab.0.center" timestamp="1590712966558">
+    <state width="1557" height="131" key="GridCell.Tab.0.bottom/0.0.1536.824/-1600.177.1600.860@-1600.177.1600.860" timestamp="1590741682790" />
+    <state width="1493" height="131" key="GridCell.Tab.0.bottom/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590730094859" />
+    <state width="1493" height="112" key="GridCell.Tab.0.bottom/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590916000190" />
+    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590896900302" />
+    <state width="1493" height="112" key="GridCell.Tab.0.center" timestamp="1590916000190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="119" key="GridCell.Tab.0.center/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590712966558" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590483032382" />
-    <state width="1493" height="119" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590665880941" />
-    <state width="1493" height="119" key="GridCell.Tab.0.left" timestamp="1590712966557">
+    <state width="1557" height="131" key="GridCell.Tab.0.center/0.0.1536.824/-1600.177.1600.860@-1600.177.1600.860" timestamp="1590741682789" />
+    <state width="1493" height="131" key="GridCell.Tab.0.center/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590730094859" />
+    <state width="1493" height="112" key="GridCell.Tab.0.center/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590916000190" />
+    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590896900302" />
+    <state width="1493" height="112" key="GridCell.Tab.0.left" timestamp="1590916000190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="119" key="GridCell.Tab.0.left/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590712966557" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590483032382" />
-    <state width="1493" height="119" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590665880941" />
-    <state width="1493" height="119" key="GridCell.Tab.0.right" timestamp="1590712966558">
+    <state width="1557" height="131" key="GridCell.Tab.0.left/0.0.1536.824/-1600.177.1600.860@-1600.177.1600.860" timestamp="1590741682789" />
+    <state width="1493" height="131" key="GridCell.Tab.0.left/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590730094858" />
+    <state width="1493" height="112" key="GridCell.Tab.0.left/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590916000190" />
+    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590896900302" />
+    <state width="1493" height="112" key="GridCell.Tab.0.right" timestamp="1590916000190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="119" key="GridCell.Tab.0.right/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590712966558" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590483032383" />
-    <state width="1493" height="119" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590665880941" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1590566441730">
+    <state width="1557" height="131" key="GridCell.Tab.0.right/0.0.1536.824/-1600.177.1600.860@-1600.177.1600.860" timestamp="1590741682789" />
+    <state width="1493" height="131" key="GridCell.Tab.0.right/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590730094859" />
+    <state width="1493" height="112" key="GridCell.Tab.0.right/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590916000190" />
+    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590896900302" />
+    <state width="1493" height="180" key="GridCell.Tab.1.bottom" timestamp="1590896900302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590566441730" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1590566441730">
+    <state width="1493" height="180" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590896900302" />
+    <state width="1493" height="180" key="GridCell.Tab.1.center" timestamp="1590896900302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590566441730" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1590566441730">
+    <state width="1493" height="180" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590896900302" />
+    <state width="1493" height="180" key="GridCell.Tab.1.left" timestamp="1590896900302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590566441730" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1590566441730">
+    <state width="1493" height="180" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590896900302" />
+    <state width="1493" height="180" key="GridCell.Tab.1.right" timestamp="1590896900302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590566441730" />
+    <state width="1493" height="180" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590896900302" />
     <state x="421" y="136" key="Maven.ArtifactSearchDialog" timestamp="1590561372811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590481335049" />
     <state x="421" y="136" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1590561372811" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1590562099700">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1590719128956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824/-1600.177.1600.860@0.0.1536.824" timestamp="1590719128956" />
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/-1680.36.1344.800@0.0.1536.824" timestamp="1590480442432" />
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590562099700" />
   </component>

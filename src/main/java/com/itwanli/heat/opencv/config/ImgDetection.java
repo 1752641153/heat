@@ -1,4 +1,4 @@
-package com.itwanli.heat.config;
+package com.itwanli.heat.opencv.config;
 
 import org.opencv.core.Core;
 

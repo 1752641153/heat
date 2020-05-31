@@ -98,6 +98,14 @@
             <version>3.2.0-1.3</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/uk.gov.gchq.gaffer/bitmap-library -->
+        <dependency>
+            <groupId>uk.gov.gchq.gaffer</groupId>
+            <artifactId>bitmap-library</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+
+
         <!--消息推送websocket-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

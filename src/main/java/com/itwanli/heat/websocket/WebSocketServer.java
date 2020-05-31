@@ -92,7 +92,7 @@ public class WebSocketServer {
             //List<SnapRecordEntity> snapRecordEntities = snapRecordRepository.findByCameraIdInOrderByEventTimeLimit(x.cameraIndexCodes,x.dateStr);
             //String message = JSON.toJSONString(BaseResult.success(snapRecordEntities)) ;
             try {
-                x.session.getBasicRemote().sendText(message);
+                x.session.getBasicRemote().sendText("message");
             } catch (IOException e) {
                 e.printStackTrace();
             }
